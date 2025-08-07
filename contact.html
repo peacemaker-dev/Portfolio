@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mlamuli Biyela | Portfolio</title>
+  
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Unica+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mystyles.css">
+
+</head>
+<body>
+    <header>
+        <h1>Portfolio</h1>
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="contact-header">
+            <h2>Get in Touch</h2>
+            <p>Whether you're interested in working together, have a question, or just want to connect. I'd love to hear from you!</p>
+        </section>
+        
+        <!-- Contact Methods -->
+        <section class="contact-info">
+            <ul>
+                <li>
+                    <img class="contact-icons" src="images/email.png" alt="Email Icon"/>
+                    <a class="social-media-links" href="mailto:mlamulipeace01@gmail.com">mlamulipeace01@gmail.com</a>
+                </li>
+                <li>
+                    <img class="contact-icons" src="images/call.png" alt="Contact Icon"/>
+                    <a class="social-media-links" href="tel:0791681131">079-168-1131</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form">
+            <h3>Send a Message</h3>
+            <p>Fill in the form below and I'll get back to you as soon as I can.</p>
+            <form action="submit-form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="e.g. John Doe" required />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="e.g. johndoe@gmail.com" required />
+
+                <label for="number">Contact:</label>
+                <input type="tel" name="number" id="number" required 
+                    pattern="^0[6-8][0-9]{8}$" 
+                    placeholder="e.g. 0712345678"
+                    title="Enter a valid South African number e.g. 0712345678"/>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" />
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Social Media -->
+        <section class="social-media">
+            <h3>Connect with Me</h3>
+            <p>Follow or message me through my social platforms:</p>
+            <ul>
+                <li>
+                    <a class="social-media-links" href="#" target="_blank"><img src="images/linkedin.png" alt="LinkedIn Icon"/></a><br/>
+                    <label for="linkedin">LinkedIn</label>
+                </li>
+                <li>
+                    <a class="social-media-links" href="#" target="_blank"><img src="images/github.png" alt="GitHub Icon"/></a><br/>
+                    <label for="github">GitHub</label>
+                </li>
+                <li>
+                    <a class="social-media-links" href="#" target="_blank"><img src="images/social.png" alt="Instagram Icon"/></a><br/>
+                    <label for="instagram">Instagram</label>
+                </li>
+                <li>
+                    <a class="social-media-links" href="#" target="_blank"><img src="images/facebook.png" alt="Facebook Icon"/></a><br/>
+                    <label for="facebook">Facebook</label>
+                </li>
+                <li>
+                    <a class="social-media-links" href="#" target="_blank"><img src="images/tik-tok.png" alt="TikTok Icon"/></a><br/>
+                    <label for="tiktok">TikTok</label>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <p>&copy; 2025 Mlamuli Biyela | Powered by Peacemaker Dev</p>
+    </footer>
+</body>
+</html>
