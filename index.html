@@ -17,37 +17,58 @@
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="#work">Work</a></li>
+                <li><a href="work.html">Work</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     
+    <!-- Main Content -->
     <main>
-        <!-- Main Intro Section -->
-        <div class="intro-container">
-            <div class="name">Mlamuli Biyela</div>
-            <div class="tagline">Web Developer & IT Enthusiast</div>
-        </div>
-
-        <!-- Hero Section -->
         <section class="hero">
             <div class="container">
-                <div class="intro-text">
-                    <p>Welcome to my portfolio. I'm an IT student with a passion for coding and networking. 
-                        Through my freelance brand, <span style="color:#00f0ff;">Peacemaker Dev </span>, I design and build websites that are simple, clean, functional and professional.
-                        Feel free to learn more <strong>about</strong> me and check out some of my <strong>work</strong>.
-                    </p>
+                <div class="intro-container">
+                    <h1>Hi, I'm</h1>
+                    <div class="name">Mlamuli Biyela</div>
+                    <div class="tagline">Web Developer and IT Student</div>
+                    <div class="cta-buttons">
+                        <button class="btn primary-btn" onclick="window.location.href='work.html'">Explore My Work</button>
+                        <button class="btn secondary-btn" onclick="window.location.href='contact.html'">Contact Me</button>
+                    </div>
                 </div>
                 <div class="intro-image">
                     <img src="images/DSC_0547.png" alt="Mlamuli Biyela">
                 </div>
+                <div class="intro-text">
+                    <p>I am an IT student driven by curiosity about how software works and a passion for solving complex problems. 
+                        I am a freelance web developer under the brand <span style="color:#00f0ff;">Peacemaker Dev</span>, creating websites that are simple, clean, functional, and professional. 
+                        My journey blends technical learning with real-world projects, combining coding, networking, and creative problem-solving. 
+                        There's more to my story, feel free to learn more <strong>about</strong> me and explore some of my <strong>work</strong>.
+                    </p>
+                </div>
             </div>
         </section>
+
     </main>
 
     <footer class="site-footer">
         <p>&copy; 2025 Mlamuli Biyela | Powered by Peacemaker Dev</p>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const nameEl = document.querySelector('.name');
+            const fullText = "Mlamuli Biyela";
+            let i = 0;
+
+            function type() {
+                if (i <= fullText.length) {
+                    nameEl.textContent = fullText.slice(0, i);
+                    i++;
+                    setTimeout(type, 120); // typing speed in ms
+                }
+            }
+            type();
+        });
+</script>
 </body>
 </html>
