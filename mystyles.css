@@ -687,25 +687,28 @@ button:hover {
     font-size: 2rem;
     color: var(--neon-blue, #00f0ff);
     text-shadow: 0 0 10px var(--neon-blue, #00f0ff);
-    margin-bottom: 2rem;
+    margin: 1.5rem;
     text-align: center;
     letter-spacing: 2px;
 }
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: 1fr 1fr;
+    align-items:center;
     gap: 2rem;
 }
 
 .project-card {
     background: rgba(20, 30, 40, 0.92);
     border-radius: 16px;
+    padding: 10px;
     box-shadow: 0 0 16px 0 rgba(0,240,255,0.10);
     overflow: hidden;
     display: flex;
     flex-direction: column;
     transition: transform 0.18s, box-shadow 0.18s;
+    align-self:center;
 }
 
 .project-card:hover {
@@ -770,6 +773,12 @@ button:hover {
 .project-links a:hover {
     color: #fff;
     border-bottom: 1px solid var(--neon-blue, #00f0ff);
+}
+
+@media (max-width: 700px){
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .skills {
@@ -946,14 +955,14 @@ button:hover {
 
 .modal-content {
     background: #181f25;
-    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/modal-bg.png');
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: #e0f7fa;
     padding: 2rem 1.5rem;
     border-radius: 16px;
-    max-width: 500px;
+    max-width: 1000px;
     width: 90%;
     box-shadow: 0 0 32px var(--neon-blue, #00f0ff);
     position: relative;
@@ -1025,6 +1034,10 @@ button:hover {
     line-height: 1.5;
     list-style: disc;
     font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+.case-study-content strong {
+    color: white;
 }
 
 @media (max-width: 600px) {
