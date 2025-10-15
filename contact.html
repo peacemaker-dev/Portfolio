@@ -12,13 +12,17 @@
 </head>
 <body>
     <header>
-        <h1>Portfolio</h1>
-        <nav class="nav">
+        <div class="logo">
+            <img src="images/logo.png" alt="Peacemaker Dev Logo" width="80">
+        </div>
+        <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+        <nav class="nav" aria-label="Main Navigation">
             <ul class="nav-links">
+                <li class="close-btn">&times;</li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="work.html">Work</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -67,7 +71,7 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="6" required></textarea>
 
-                <button type="submit" id="submit">Send Message</button>
+                <button class="form-btn" type="submit" id="submit">Send Message</button>
             </form>
         </section>
 
@@ -102,5 +106,26 @@
     <footer class="site-footer">
         <p>&copy; 2025 Mlamuli Biyela | Powered by Peacemaker Dev</p>
     </footer>
+     <script>
+            // Menu toggle for right-side slide-out menu
+            const menuToggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('.nav');
+            const closeBtn = document.querySelector('.nav-links .close-btn');
+            const overlay = document.querySelector('.menu-overlay');
+
+            function openMenu() {
+                nav.style.right = "0";
+                overlay.style.display = "block";
+            }
+
+            function closeMenu() {
+                nav.style.right = "-40%";
+                overlay.style.display = "none";
+            }
+
+            menuToggle.addEventListener('click', openMenu);
+            closeBtn.addEventListener('click', closeMenu);
+            overlay.addEventListener('click', closeMenu);
+    </script>
 </body>
 </html>

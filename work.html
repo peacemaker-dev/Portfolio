@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work | Mlamuli Biyela</title>
-  
+
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Unica+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Unica+One&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="mystyles.css">
 
 </head>
+
 <body>
     <header>
-        <h1>Portfolio</h1>
-        <nav class="nav">
+        <div class="logo">
+            <img src="images/logo.png" alt="Peacemaker Dev Logo" width="80">
+        </div>
+        <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+        <nav class="nav" aria-label="Main Navigation">
             <ul class="nav-links">
+                <li class="close-btn">&times;</li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="work.html" class="active">Work</a></li>
+                <li><a href="work.html">Work</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <main>
         <!-- Intro Section -->
         <section class="work-intro">
@@ -35,67 +42,86 @@
 
         <!-- Project Showcase Grid with Briefs -->
         <section class="projects">
-            <div class="projects-grid" >
+            <div class="projects-grid">
                 <!-- Project 1 -->
                 <section class="project-card">
                     <h2 class="projects-title">Project 1</h2>
                     <div class="project-thumb">
-                        <img src="images/Screenshot (77).png" alt="Screenshot of Mreva Media PWA site" />
+                        <img src="images/mrevamedia.png" alt="Screenshot of Mreva Media PWA site" />
                     </div>
                     <div class="project-content">
                         <h3>Mreva Media PWA</h3>
                         <p>
-                            Portfolio and services site with PWA setup. Includes manifest and service worker for offline support.
+                            Portfolio and services site with PWA setup. Includes manifest and service worker for offline
+                            support.
                         </p>
                         <ul class="project-meta">
                             <li><strong>Role:</strong> Frontend</li>
                             <li><strong>Stack:</strong> HTML, CSS, JavaScript, PWA basics</li>
                         </ul>
                         <div class="project-links">
-                            <a href="https://www.mrevamedia.co.za" target="_blank" aria-label="Open Mreva Media live demo">Live Demo</a>
-                            <a href="https://github.com/peacemaker-dev/Mreva-Media.git" target="_blank" aria-label="Open Mreva Media GitHub repo">GitHub</a>
+                            <a href="https://www.mrevamedia.co.za" target="_blank"
+                                aria-label="Open Mreva Media live demo">Live Demo</a>
+                            <a href="https://github.com/peacemaker-dev/Mreva-Media.git" target="_blank"
+                                aria-label="Open Mreva Media GitHub repo">GitHub</a>
                             <a href="#" class="case-study-link" data-template="mreva-case-study">Case Study</a>
                         </div>
                     </div>
                     <template id="mreva-case-study">
                         <div class="case-study-content">
-                            <h2>Case Study: <br/><strong>Mreva Media PWA</strong></h2>
+                            <h2>Case Study: <br /><strong>Mreva Media PWA</strong></h2>
                             <h3>Project Overview</h3>
                             <p>
-                                <strong>Mreva Media</strong> is a creative business specializing in photography, videography, and drone services for weddings, graduations, cultural events, and other ceremonies. 
-                                The goal of this project was to design and develop a responsive website that highlights the brand's services, showcases work, and enables easy booking for clients.
+                                <strong>Mreva Media</strong> is a creative business specializing in photography,
+                                videography, and drone services for weddings, graduations, cultural events, and other
+                                ceremonies.
+                                The goal of this project was to design and develop a responsive website that highlights
+                                the brand's services, showcases work, and enables easy booking for clients.
                             </p>
                             <h3>Objectives</h3>
                             <ul>
                                 <li>Build a modern, mobile-first website to represent Mreva Media's brand identity.</li>
                                 <li>Provide clear information on packages and services.</li>
-                                <li>Create a simple booking form integrated with email and WhatsApp for client convenience.</li>
+                                <li>Create a simple booking form integrated with email and WhatsApp for client
+                                    convenience.</li>
                                 <li>Implement SEO optimization and Open Graph tags for better online visibility.</li>
-                                <li>Prepare the site for Progressive Web App (PWA) functionality so users can install it like an app.</li>
+                                <li>Prepare the site for Progressive Web App (PWA) functionality so users can install it
+                                    like an app.</li>
                             </ul>
                             <h3>My Role</h3>
                             <ul>
-                                <li><strong>Frontend Development:</strong> Designed and built the layout using HTML, CSS, and minimal JavaScript.</li>
-                                <li><strong>UI/UX Design:</strong> Ensured a clean, professional, and user-friendly interface.</li>
-                                <li><strong>SEO Setup:</strong> Added meta tags, keywords, and Open Graph for search engine ranking.</li>
-                                <li><strong>Booking Flow:</strong> Developed a booking form that sends requests via both email and WhatsApp.</li>
-                                <li><strong>Deployment:</strong> Hosted the project and tested performance across devices.</li>
+                                <li><strong>Frontend Development:</strong> Designed and built the layout using HTML,
+                                    CSS, and minimal JavaScript.</li>
+                                <li><strong>UI/UX Design:</strong> Ensured a clean, professional, and user-friendly
+                                    interface.</li>
+                                <li><strong>SEO Setup:</strong> Added meta tags, keywords, and Open Graph for search
+                                    engine ranking.</li>
+                                <li><strong>Booking Flow:</strong> Developed a booking form that sends requests via both
+                                    email and WhatsApp.</li>
+                                <li><strong>Deployment:</strong> Hosted the project and tested performance across
+                                    devices.</li>
                             </ul>
                             <h3>Key Features</h3>
                             <ul>
                                 <li>📱 <strong>Responsive Design:</strong> Works seamlessly on desktop and mobile.</li>
-                                <li>📩 <strong>Dual Booking System:</strong> Client requests reach both WhatsApp and email.</li>
-                                <li>⚡ <strong>PWA Ready:</strong> Site can be installed as an app for quicker access.</li>
-                                <li>🔍 <strong>SEO Optimized:</strong> Improved discoverability on search engines and social platforms.</li>
-                                <li>📷 <strong>Service-Specific Pages:</strong> Dedicated sections for Photography, Videography, Drone, Weddings, Graduation, and Traditional Events.</li>
+                                <li>📩 <strong>Dual Booking System:</strong> Client requests reach both WhatsApp and
+                                    email.</li>
+                                <li>⚡ <strong>PWA Ready:</strong> Site can be installed as an app for quicker access.
+                                </li>
+                                <li>🔍 <strong>SEO Optimized:</strong> Improved discoverability on search engines and
+                                    social platforms.</li>
+                                <li>📷 <strong>Service-Specific Pages:</strong> Dedicated sections for Photography,
+                                    Videography, Drone, Weddings, Graduation, and Traditional Events.</li>
                             </ul>
-                            <h3>Outcome</h3> 
+                            <h3>Outcome</h3>
                             <p>
-                                The website now acts as the digital hub for Mreva Media, making it easier for clients to explore services, view packages, and book directly. 
-                                It also strengthens the brand's online presence while providing a smooth user experience.
+                                The website now acts as the digital hub for Mreva Media, making it easier for clients to
+                                explore services, view packages, and book directly.
+                                It also strengthens the brand's online presence while providing a smooth user
+                                experience.
                             </p>
                         </div>
-                </template>
+                    </template>
                 </section>
 
                 <!-- Project 2 -->
@@ -107,7 +133,7 @@
                     <div class="project-content">
                         <h3>Portfolio Website</h3>
                         <p>
-                            This very portfolio site designed to showcase my skills, freelance work, and projects. 
+                            This very portfolio site designed to showcase my skills, freelance work, and projects.
                             Built with clean HTML, CSS, and JavaScript.
                         </p>
                         <ul class="project-meta">
@@ -116,27 +142,33 @@
                         </ul>
                         <div class="project-links">
                             <a href="https://peacemaker-dev.github.io/Portfolio/" target="_blank">Live Demo</a>
-                            <a href="https://github.com/peacemaker-dev/Portfolio.git" target="_blank" >GitHub</a>
+                            <a href="https://github.com/peacemaker-dev/Portfolio.git" target="_blank">GitHub</a>
                             <a href="#" class="case-study-link" data-template="portfolio-case-study">Case Study</a>
                         </div>
                     </div>
                     <template id="portfolio-case-study">
                         <div class="case-study-content">
-                            <h2>Case Study: <br/><strong>Personal Portfolio Website</strong></h2>
+                            <h2>Case Study: <br /><strong>Personal Portfolio Website</strong></h2>
                             <h3>Project Overview</h3>
                             <p>
-                                I created a personal portfolio website to showcase my projects, skills, and services as an IT student and freelance developer. 
-                                The site is designed to reflect both my professional identity <strong>(Mlamuli Biyela, IT Student)</strong> and my freelance brand <strong>(Peacemaker Dev)</strong>.
+                                I created a personal portfolio website to showcase my projects, skills, and services as
+                                an IT student and freelance developer.
+                                The site is designed to reflect both my professional identity <strong>(Mlamuli Biyela,
+                                    IT Student)</strong> and my freelance brand <strong>(Peacemaker Dev)</strong>.
                             </p>
                             <h3>Problem</h3>
                             <p>
-                                I needed a single online space to present my work, demonstrate my skills in frontend development, and make it easy for potential clients and employers to contact me. 
-                                The challenge was balancing a professional student identity with a creative freelance brand while keeping the site clean and modern.
+                                I needed a single online space to present my work, demonstrate my skills in frontend
+                                development, and make it easy for potential clients and employers to contact me.
+                                The challenge was balancing a professional student identity with a creative freelance
+                                brand while keeping the site clean and modern.
                             </p>
                             <h3>Solution</h3>
                             <p>
-                                I designed and developed a portfolio website using <strong>HTML, CSS, and JavaScript.</strong> 
-                                The layout introduces me, showcases projects in a grid format, and highlights both academic and freelance work.
+                                I designed and developed a portfolio website using <strong>HTML, CSS, and
+                                    JavaScript.</strong>
+                                The layout introduces me, showcases projects in a grid format, and highlights both
+                                academic and freelance work.
                             </p>
                             <ul>
                                 <li>Neon blue + #071952 color scheme for a modern, eye-catching look.</li>
@@ -146,10 +178,11 @@
                                 <li>Call-to-action buttons to encourage project inquiries and contact.</li>
 
                             </ul>
-                            <h3>Outcome</h3> 
+                            <h3>Outcome</h3>
                             <p>
-                                The portfolio provides a professional hub for both academic and freelance opportunities. 
-                                It's optimized for visibility, easy to navigate, and acts as a central place to link to live demos, GitHub repos, and detailed project case studies.
+                                The portfolio provides a professional hub for both academic and freelance opportunities.
+                                It's optimized for visibility, easy to navigate, and acts as a central place to link to
+                                live demos, GitHub repos, and detailed project case studies.
                             </p>
                         </div>
                     </template>
@@ -164,25 +197,30 @@
                     <div class="project-content">
                         <h3>Driving School Website</h3>
                         <p>
-                            A modern and responsive site for a driving school. Showcases packages for Code 8, 10, and 14 with booking options to simplify learner registration.
+                            A modern and responsive site for a driving school. Showcases packages for Code 8, 10, and 14
+                            with booking options to simplify learner registration.
                         </p>
                         <ul class="project-meta">
                             <li><strong>Role:</strong> Frontend</li>
                             <li><strong>Stack:</strong> HTML, CSS, JavaScript</li>
                         </ul>
                         <div class="project-links">
-                            <a href="https://peacemaker-dev.github.io/Driving-School-Website/" target="_blank" aria-label="Open Driving School live demo">Live Demo</a>
-                            <a href="https://github.com/peacemaker-dev/Driving-School-Website" target="_blank" aria-label="Open Driving School GitHub repo">GitHub</a>
+                            <a href="https://peacemaker-dev.github.io/Driving-School-Website/" target="_blank"
+                                aria-label="Open Driving School live demo">Live Demo</a>
+                            <a href="https://github.com/peacemaker-dev/Driving-School-Website" target="_blank"
+                                aria-label="Open Driving School GitHub repo">GitHub</a>
                             <a href="#" class="case-study-link" data-template="driving-case-study">Case Study</a>
                         </div>
                     </div>
                     <template id="driving-case-study">
                         <div class="case-study-content">
-                            <h2>Case Study: <br/><strong>Driving School Website</strong></h2>
+                            <h2>Case Study: <br /><strong>Driving School Website</strong></h2>
                             <h3>Project Overview</h3>
                             <p>
-                                The <strong>Driving School Website</strong> was built to help learners easily explore available driving packages and book lessons online. 
-                                It provides clear details for Code 8, 10, and 14 courses, with a structured layout for pricing, brush-up, half-course, and full-course packages.
+                                The <strong>Driving School Website</strong> was built to help learners easily explore
+                                available driving packages and book lessons online.
+                                It provides clear details for Code 8, 10, and 14 courses, with a structured layout for
+                                pricing, brush-up, half-course, and full-course packages.
                             </p>
                             <h3>Objectives</h3>
                             <ul>
@@ -194,74 +232,37 @@
                             </ul>
                             <h3>My Role</h3>
                             <ul>
-                                <li><strong>Frontend Development:</strong> Built the layout using HTML, CSS, and JavaScript.</li>
-                                <li><strong>UI/UX Design:</strong> Focused on simplicity and clarity to guide learners through package selection.</li>
-                                <li><strong>Booking Flow:</strong> Designed buttons and sections to encourage easy booking requests.</li>
-                                <li><strong>Deployment:</strong> Hosted the project on GitHub Pages for public access.</li>
+                                <li><strong>Frontend Development:</strong> Built the layout using HTML, CSS, and
+                                    JavaScript.</li>
+                                <li><strong>UI/UX Design:</strong> Focused on simplicity and clarity to guide learners
+                                    through package selection.</li>
+                                <li><strong>Booking Flow:</strong> Designed buttons and sections to encourage easy
+                                    booking requests.</li>
+                                <li><strong>Deployment:</strong> Hosted the project on GitHub Pages for public access.
+                                </li>
                             </ul>
                             <h3>Key Features</h3>
                             <ul>
-                                <li>📱 <strong>Responsive Design:</strong> Optimized for mobile, tablet, and desktop screens.</li>
+                                <li>📱 <strong>Responsive Design:</strong> Optimized for mobile, tablet, and desktop
+                                    screens.</li>
                                 <li>🚗 <strong>Course Packages:</strong> Clear options for Code 8, 10, and 14.</li>
-                                <li>📋 <strong>Booking Section:</strong> Simple flow for learners to reach out and book.</li>
-                                <li>🎨 <strong>Clean Design:</strong> Easy navigation with a focus on clarity and readability.</li>
-                                <li>🌍 <strong>Hosted Online:</strong> Accessible through GitHub Pages with a live demo link.</li>
+                                <li>📋 <strong>Booking Section:</strong> Simple flow for learners to reach out and book.
+                                </li>
+                                <li>🎨 <strong>Clean Design:</strong> Easy navigation with a focus on clarity and
+                                    readability.</li>
+                                <li>🌍 <strong>Hosted Online:</strong> Accessible through GitHub Pages with a live demo
+                                    link.</li>
                             </ul>
-                            <h3>Outcome</h3> 
+                            <h3>Outcome</h3>
                             <p>
-                                The Driving School Website provides a professional online presence for a driving school, making it easier for learners to explore packages, understand pricing, and begin booking their lessons. 
+                                The Driving School Website provides a professional online presence for a driving school,
+                                making it easier for learners to explore packages, understand pricing, and begin booking
+                                their lessons.
                                 It improves accessibility and strengthens trust with a clear, responsive design.
                             </p>
                         </div>
                     </template>
                 </section>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section class="skills">
-            <h2 class="skills-title">Skills</h2>
-            <div class="skills-groups">
-                <div class="skills-group">
-                    <h3>Web Development</h3>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Basic JavaScript</li>
-                    </ul>
-                </div>
-
-                <div class="skills-group">
-                    <h3>Programming</h3>
-                    <ul>
-                        <li>Java</li>
-                        <li>Java Swing</li>
-                    </ul>
-                </div>
-
-                <div class="skills-group">
-                    <h3>Networking</h3>
-                    <ul>
-                        <li>Network basics</li>
-                        <li>Cisco Packet Tracer</li>
-                    </ul>
-                </div>
-
-                <div class="skills-group">
-                    <h3>Tools</h3>
-                    <ul>
-                        <li>VS Code</li>
-                        <li>GitHub</li>
-                    </ul>
-                </div>
-
-                <div class="skills-group">
-                    <h3>Creative</h3>
-                    <ul>
-                        <li>Photography</li>
-                        <li>Videography</li>
-                    </ul>
-                </div>
             </div>
         </section>
 
@@ -281,7 +282,7 @@
         <div class="modal-content">
             <span class="close-modal">&times;</span>
             <div id="modal-body">
-            <!-- Case study content will be injected here -->
+                <!-- Case study content will be injected here -->
             </div>
         </div>
     </div>
@@ -290,10 +291,10 @@
     </footer>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             // Open modal with dynamic content
             document.querySelectorAll('.case-study-link').forEach(link => {
-                link.addEventListener('click', function(e) {
+                link.addEventListener('click', function (e) {
                     e.preventDefault();
                     const templateId = link.dataset.template;
                     if (templateId) {
@@ -310,16 +311,36 @@
                 });
             });
             // Close modal
-            document.querySelector('.close-modal').onclick = function() {
+            document.querySelector('.close-modal').onclick = function () {
                 document.getElementById('caseStudyModal').style.display = 'none';
             };
-            window.onclick = function(event) {
+            window.onclick = function (event) {
                 const modal = document.getElementById('caseStudyModal');
                 if (event.target === modal) {
                     modal.style.display = 'none';
                 }
             };
         });
+
+        // Menu toggle for right-side slide-out menu
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.nav');
+        const closeBtn = document.querySelector('.nav-links .close-btn');
+        const overlay = document.querySelector('.menu-overlay');
+
+        function openMenu() {
+            nav.style.right = "0";
+            overlay.style.display = "block";
+        }
+
+        function closeMenu() {
+            nav.style.right = "-40%";
+            overlay.style.display = "none";
+        }
+
+        menuToggle.addEventListener('click', openMenu);
+        closeBtn.addEventListener('click', closeMenu);
+        overlay.addEventListener('click', closeMenu);
     </script>
 </body>
 </html>

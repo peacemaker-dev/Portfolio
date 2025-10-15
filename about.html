@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Mlamuli Biyela</title>
-  
+
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Unica+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Unica+One&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="mystyles.css">
 
 </head>
+
 <body>
     <header>
-        <h1>Portfolio</h1>
-        <nav class="nav">
+        <div class="logo">
+            <img src="images/logo.png" alt="Peacemaker Dev Logo" width="80">
+        </div>
+        <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+        <nav class="nav" aria-label="Main Navigation">
             <ul class="nav-links">
+                <li class="close-btn">&times;</li>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="work.html">Work</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    
+
+    <section class="about-hero">
+        <h2>About Me</h2>
+        <div class="about-image">
+            <img src="images/mlamuli.png" alt="Mlamuli Biyela">
+        </div>
+    </section>
+
     <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <div class="about-image">
-                <img src="images/mlamuli.png" alt="Mlamuli Biyela">
-            </div>
-            <div class="about-section">
+        <section class="about-content" id="about">
+            <div class="about-info-box">
                 <h3><span class="emoji">👤</span> Personal Info</h3>
                 <p><strong>🤵 Name(s):</strong> Mlamuli "Peacemaker".</p>
                 <p><strong>👨‍🦱 Surname:</strong> Biyela.</p>
@@ -38,40 +48,45 @@
                 <p><strong>🗣 Languages:</strong> IsiZulu, English.</p>
             </div>
 
-            <div class="about-section">
+            <div class="about-info-box">
                 <h3><span class="emoji">🚀</span> My Journey</h3>
-                <p>I am currently a second-year IT student at Tshwane University of Technology. 
-                    I chose this path out of curiosity about how software works and a deep interest in solving problems using technology.
+                <p>I am currently a second-year IT student at Tshwane University of Technology.
+                    I chose this path out of curiosity about how software works and a deep interest in solving problems
+                    using technology.
                 </p>
             </div>
 
-            <div class="about-section">
+            <div class="about-info-box">
                 <h3><span class="emoji">💡</span> What I Enjoy</h3>
-                <p>I love solving logic problems, building apps, and helping people with practical digital solutions. 
+                <p>I love solving logic problems, building apps, and helping people with practical digital solutions.
                     I enjoy turning ideas into working software and learning something new in the process.
                 </p>
             </div>
 
-            <div class="about-section">
+            <div class="about-info-box">
                 <h3><span class="emoji">🧑‍💻</span> Freelance Work</h3>
-                <p>I work under the name <strong><span style="color:#00f0ff;">Peacemaker Dev</span></strong> to build clean and functional websites for businesses and individuals. 
-                    I also freelance as a photographer and videographer, capturing events like weddings, graduations, and ceremonies.
+                <p>I work under the name <strong><span style="color:#00f0ff;">Peacemaker Dev</span></strong> to build
+                    clean and functional websites for businesses and individuals.
+                    I also freelance as a photographer and videographer, capturing events like weddings, graduations,
+                    and ceremonies.
                 </p>
             </div>
 
-            <div class="about-section">
+            <div class="about-info-box">
                 <h3><span class="emoji">📈</span> Challenges and Growth</h3>
-                <p>Balancing school and freelancing is not always easy, but it keeps me motivated. 
-                    Every project I complete helps me grow my skills and move closer to becoming a well-rounded software engineer.
+                <p>Balancing school and freelancing is not always easy, but it keeps me motivated.
+                    Every project I complete helps me grow my skills and move closer to becoming a well-rounded software
+                    engineer.
                 </p>
             </div>
 
-            <div class="about-section">
+            <div class="about-info-box">
                 <h3><span class="emoji">🌐</span> Outside of Tech</h3>
-                <p>When I'm not coding or working on shoots, I focus on learning new tools, exploring technology, and planning for the future.</p>
+                <p>When I'm not coding or working on shoots, I focus on learning new tools, exploring technology, and
+                    planning for the future.</p>
             </div>
 
-            <div class="about-section">
+            <div class="about-info-box">
                 <h3><span class="emoji">🔍</span> Want to Know More?</h3>
                 <p>Explore the sections above to see how I turn code into solutions.</p>
             </div>
@@ -80,5 +95,27 @@
     <footer class="site-footer">
         <p>&copy; 2025 Mlamuli Biyela | Powered by Peacemaker Dev</p>
     </footer>
+    <script>
+        // Menu toggle for right-side slide-out menu
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.nav');
+        const closeBtn = document.querySelector('.nav-links .close-btn');
+        const overlay = document.querySelector('.menu-overlay');
+
+        function openMenu() {
+            nav.style.right = "0";
+            overlay.style.display = "block";
+        }
+
+        function closeMenu() {
+            nav.style.right = "-40%";
+            overlay.style.display = "none";
+        }
+
+        menuToggle.addEventListener('click', openMenu);
+        closeBtn.addEventListener('click', closeMenu);
+        overlay.addEventListener('click', closeMenu);
+    </script>
 </body>
+
 </html>

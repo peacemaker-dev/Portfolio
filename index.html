@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mlamuli Biyela | Portfolio</title>
-  
+
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Unica+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Unica+One&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="mystyles.css">
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -26,7 +29,7 @@
         </nav>
     </header>
 
-    
+
     <!-- Main Content -->
     <main>
         <section class="hero">
@@ -36,8 +39,10 @@
                     <div class="name"></div> <!-- Typing effect -->
                     <div class="tagline">Web Developer and IT Student</div>
                     <div class="cta-buttons">
-                        <button class="btn primary-btn" onclick="window.location.href='work.html'">Explore My Work</button>
-                        <button class="btn secondary-btn" onclick="window.location.href='contact.html'">Contact Me</button>
+                        <button class="btn primary-btn" onclick="window.location.href='work.html'">Explore My
+                            Work</button>
+                        <button class="btn secondary-btn" onclick="window.location.href='contact.html'">Contact
+                            Me</button>
                     </div>
                 </div>
 
@@ -47,8 +52,10 @@
 
                 <div class="intro-text">
                     <p>
-                        I am an IT student driven by curiosity about how software works and a passion for solving complex problems. 
-                        I am a freelance web developer under <span style="color:#00f0ff;">Peacemaker Dev</span>, creating clean, functional, and professional websites.
+                        I am an IT student driven by curiosity about how software works and a passion for solving
+                        complex problems.
+                        I am a freelance web developer under <span style="color:#00f0ff;">Peacemaker Dev</span>,
+                        creating clean, functional, and professional websites.
                     </p>
                 </div>
             </div>
@@ -56,59 +63,141 @@
 
         <!-- About Section -->
         <section class="about" id="about">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>
-                    I'm <strong>Mlamuli Biyela</strong>, an IT student at Tshwane University of Technology and freelance web developer under the brand <span style="color: var(--accent-light);">Peacemaker Dev</span>. 
-                    My focus is on software development and networking, blending classroom knowledge with real-world projects. 
-                    I enjoy turning ideas into clean, functional solutions and I'm working towards becoming a <strong>Software Engineer</strong>. 
-                    Learn more on my <a href="about.html">About page</a>.
-                </p>
+                <div class="title-image-wrapper">
+                    <h2>About Me</h2>
+                    <div class="title-image">
+                        <img src="images/DSC_0547.png" alt="Mlamuli Biyela" width="150">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>
+                        I'm <strong>Mlamuli Biyela</strong>, an IT student at Tshwane University of Technology and freelance
+                        web developer under the brand <span style="color: var(--accent-light);">Peacemaker Dev</span>.
+                        My focus is on software development and networking, blending classroom knowledge with real-world
+                        projects.
+                        I enjoy turning ideas into clean, functional solutions and I'm working towards becoming a
+                        <strong>Software Engineer</strong>.
+                        Learn more on my <a href="about.html">About page</a>.
+                    </p>
+                </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills">
+            <h2 class="skills-title">Skills</h2>
+            <div class="skills-groups">
+                <div class="skills-group">
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Basic JavaScript</li>
+                    </ul>
+                </div>
+
+                <div class="skills-group">
+                    <h3>Programming</h3>
+                    <ul>
+                        <li>Java</li>
+                    </ul>
+                </div>
+
+                <div class="skills-group">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>VS Code</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+
+                <div class="skills-group">
+                    <h3>Creative</h3>
+                    <ul>
+                        <li>Photography</li>
+                        <li>Videography</li>
+                    </ul>
+                </div>
             </div>
         </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="services-container">
+                <h2>What I Offer</h2>
+                <p class="intro">
+                    As <strong>Peacemaker Dev</strong>, I blend technology and creativity to deliver solutions that help
+                    you stand out. Explore my core services below:
+                </p>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Web Development</h3>
+                        <p>
+                            Custom, responsive websites built with HTML, CSS, and JavaScript. Perfect for students,
+                            startups, small and professional businesses seeking a professional online presence.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Project Assistance</h3>
+                        <p>
+                            Support for school and personal IT projects: guidance, debugging, and technical setup to
+                            help you succeed and learn along the way.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Photography & Videography</h3>
+                        <p>
+                            Creative direction and hands-on assistance for photo and video shoots, using your equipment
+                            to capture moments and tell your story.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer class="site-footer">
         <p>&copy; 2025 Mlamuli Biyela | Powered by Peacemaker Dev</p>
     </footer>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    // Typing effect
-    const nameEl = document.querySelector('.name');
-    const fullText = "Mlamuli Biyela";
-    let i = 0;
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Typing effect
+            const nameEl = document.querySelector('.name');
+            const fullText = "Mlamuli Biyela";
+            let i = 0;
 
-    function type() {
-        if (i <= fullText.length) {
-            nameEl.textContent = fullText.slice(0, i);
-            i++;
-            setTimeout(type, 120);
-        }
-    }
-    type();
+            function type() {
+                if (i <= fullText.length) {
+                    nameEl.textContent = fullText.slice(0, i);
+                    i++;
+                    setTimeout(type, 120);
+                }
+            }
+            type();
 
-    // Menu toggle for right-side slide-out menu
-    const menuToggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('.nav');
-    const closeBtn = document.querySelector('.nav-links .close-btn');
-    const overlay = document.querySelector('.menu-overlay');
+            // Menu toggle for right-side slide-out menu
+            const menuToggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('.nav');
+            const closeBtn = document.querySelector('.nav-links .close-btn');
+            const overlay = document.querySelector('.menu-overlay');
 
-    function openMenu() {
-        nav.style.right = "0";
-        overlay.style.display = "block";
-    }
+            function openMenu() {
+                nav.style.right = "0";
+                overlay.style.display = "block";
+            }
 
-    function closeMenu() {
-        nav.style.right = "-40%";
-        overlay.style.display = "none";
-    }
+            function closeMenu() {
+                nav.style.right = "-40%";
+                overlay.style.display = "none";
+            }
 
-    menuToggle.addEventListener('click', openMenu);
-    closeBtn.addEventListener('click', closeMenu);
-    overlay.addEventListener('click', closeMenu);
-});
-</script>
+            menuToggle.addEventListener('click', openMenu);
+            closeBtn.addEventListener('click', closeMenu);
+            overlay.addEventListener('click', closeMenu);
+        });
+    </script>
 
 </body>
+
 </html>
