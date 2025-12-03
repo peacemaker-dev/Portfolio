@@ -9,194 +9,365 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Unica+One&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="mystyles.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="landing-bg-box">
-        <header>
-            <div class="logo">
-                <img src="images/logo.png" alt="Peacemaker Dev Logo" width="80">
-            </div>
-            <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
-            <nav class="nav" aria-label="Main Navigation">
-                <ul class="nav-links">
-                    <li class="close-btn">&times;</li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="work.html">Work</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <section class="hero">
+    <header class="site-header">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Peacemaker Dev Logo" width="50"></a>
+        </div>
+        <nav class="nav" aria-label="Main Navigation">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" role="region" aria-label="Hero Introduction">
             <div class="container">
+                <!-- Intro Text -->
                 <div class="intro-container">
                     <h2>Hi, I'm</h2>
-                    <div class="name"></div> <!-- Typing effect -->
-                    <div class="tagline">Web Developer and IT Student</div>
-                    <div class="cta-buttons">
-                        <button class="btn primary-btn" onclick="window.location.href='work.html'">Explore My
-                            Work</button>
-                        <button class="btn secondary-btn" onclick="window.location.href='contact.html'">Contact
-                            Me</button>
+                    <h1 class="name">Mlamuli Biyela</h1> <!-- Typing effect targets .name -->
+                    <p class="tagline">
+                        Aspiring Software Engineer | Web Developer | Creative Solutions for Your Business
+                    </p>
+
+                    <p class="intro-text">
+                        I'm <strong>Mlamuli Biyela</strong>, founder of
+                        <span class="company-name">Peacemaker Dev</span>.
+                        I create clean, functional, and professional websites tailored to your needs, blending
+                        creativity and technology to help you or your business stand out online.
+                    </p>
+
+                    <!-- Call-to-Action Buttons -->
+                    <div class="hero-cta-buttons">
+                        <a href="packages.html" class="btn primary-btn">View Packages</a>
+                        <a href="projects.html" class="btn secondary-btn">See Projects</a>
+                        <a href="contact.html" class="btn tertiary-btn">Contact Me</a>
                     </div>
                 </div>
 
+                <!-- Hero Image -->
                 <div class="intro-image">
-                    <img src="images/DSC_0547.png" alt="Mlamuli Biyela">
-                </div>
-
-                <div class="intro-text">
-                    <p>
-                        I am an IT student driven by curiosity about how software works and a passion for solving
-                        complex problems.
-                        I am a freelance web developer under <span style="color:#00f0ff;">Peacemaker Dev</span>,
-                        creating clean, functional, and professional websites.
-                    </p>
+                    <img src="images/DSC_0547.png" alt="Mlamuli Biyela, web developer and founder of Peacemaker Dev">
                 </div>
             </div>
         </section>
-    </div>
-    <!-- Main Content -->
-    <main>
+
         <!-- About Section -->
         <section class="about" id="about">
-            <div class="title-image-wrapper">
-                <h2>About Me</h2>
-                <div class="title-image">
-                    <img src="images/about.png" alt="Mlamuli Biyela" width="230">
-                </div>
-            </div>
-            <div class="about-text">
-                <p>
-                    I'm <strong>Mlamuli Biyela</strong>, an IT student at Tshwane University of Technology and freelance
-                    web developer under the brand <span style="color: var(--accent-light);">Peacemaker Dev</span>.
-                    My focus is on software development and networking, blending classroom knowledge with real-world
-                    projects.
-                    I enjoy turning ideas into clean, functional solutions and I'm working towards becoming a
-                    <strong>Software Engineer</strong>.
-                    Learn more on my <a href="about.html">About page</a>.
-                </p>
-            </div>
-        </section>
+            <div class="about-container">
 
-        <!-- Skills Section -->
-        <section class="skills">
-            <h2 class="skills-title">Skills</h2>
-            <div class="skills-groups">
-                <div class="skills-group">
-                    <h3>Web Development</h3>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Basic JavaScript</li>
-                    </ul>
+                <!-- Title + Image -->
+                <div class="title-image-wrapper">
+                    <h2>About Me</h2>
+
+                    <div class="title-image">
+                        <img src="images/logo.png" alt="Mlamuli Biyela">
+                    </div>
                 </div>
 
-                <div class="skills-group">
-                    <h3>Programming</h3>
-                    <ul>
-                        <li>Java</li>
-                    </ul>
+                <!-- Text Content -->
+                <div class="about-text">
+                    <p>
+                        I'm <strong>Mlamuli Biyela</strong>, an aspiring Software Engineer. I specialize in web
+                        development,
+                        software solutions, and building clean, functional, professional digital experiences.
+                        Through my freelance brand <span class="company-name">Peacemaker Dev</span>, I help clients
+                        bring
+                        their ideas to life with modern and reliable websites.
+                    </p>
+
+                    <p>
+                        My current skillset includes <strong>Java, HTML, CSS, JavaScript</strong> and I'm consistently
+                        pushing
+                        myself to grow into a full Software Engineer capable of building scalable systems and polished
+                        user
+                        interfaces.
+                    </p>
+
+                    <p>
+                        You can explore my journey and background in more detail on the
+                        <a href="about.html">About page</a>.
+                    </p>
+
+                    <button class="btn primary-btn" onclick="window.location.href='contact.html'">
+                        Get in Touch
+                    </button>
                 </div>
 
-                <div class="skills-group">
-                    <h3>Tools</h3>
-                    <ul>
-                        <li>VS Code</li>
-                        <li>GitHub</li>
-                    </ul>
-                </div>
-
-                <div class="skills-group">
-                    <h3>Creative</h3>
-                    <ul>
-                        <li>Photography</li>
-                        <li>Videography</li>
-                    </ul>
-                </div>
             </div>
         </section>
 
-        <!-- Services Section -->
-        <section class="services" id="services">
-            <div class="services-container">
-                <h2>What I Offer</h2>
+
+        <!-- Packages Section -->
+        <section class="packages" id="packages">
+
+            <!-- Section Header -->
+            <header class="packages-section-header">
+                <h2>Website Packages</h2>
                 <p class="intro">
-                    As <strong>Peacemaker Dev</strong>, I blend technology and creativity to deliver solutions that help
-                    you stand out. Explore my core services below:
+                    As <strong>Peacemaker Dev</strong>, I build modern and functional websites tailored to your goals.
+                    Explore the main packages I offer below.
                 </p>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <h3>Web Development</h3>
+            </header>
+
+            <div class="container packages-container">
+
+                <!-- Packages Grid -->
+                <div class="packages-grid">
+
+                    <!-- Portfolio Package -->
+                    <article class="main-package-card">
+
+                        <!-- Icon -->
+                        <div class="home-package-icon">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+
+                        <!-- Pricing Badge -->
+                        <span class="price-badge">From R3,000</span>
+
+                        <h3>Portfolio Website</h3>
                         <p>
-                            Custom, responsive websites built with HTML, CSS, and JavaScript. Perfect for students,
-                            startups, small and professional businesses seeking a professional online presence.
+                            Perfect for photographers, designers, freelancers, and anyone who needs a strong personal
+                            brand.
+                            Showcase your work and achievements with a clean, professional layout.
                         </p>
-                    </div>
-                    <div class="service-card">
-                        <h3>Project Assistance</h3>
+
+                        <ul class="package-details">
+                            <li><strong>Pages:</strong> 3 - 7</li>
+                            <li><strong>Price:</strong> R3,000 - R7,500</li>
+                        </ul>
+
+                        <button class="btn primary-btn" onclick="window.location.href='packages.html#portfolio'">
+                            View Details
+                        </button>
+                    </article>
+
+                    <!-- Booking Package -->
+                    <article class="main-package-card">
+
+                        <!-- Icon -->
+                        <div class="home-package-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+
+                        <!-- Pricing Badge -->
+                        <span class="price-badge">From R5,000</span>
+
+                        <h3>Booking Website</h3>
                         <p>
-                            Support for school and personal IT projects: guidance, debugging, and technical setup to
-                            help you succeed and learn along the way.
+                            Ideal for service-based businesses like photographers, tutors, salons, coaches and more.
+                            Clients can check availability and make bookings online.
                         </p>
-                    </div>
-                    <div class="service-card">
-                        <h3>Photography & Videography</h3>
+
+                        <ul class="package-details">
+                            <li><strong>Pages:</strong> 4 - 8+</li>
+                            <li><strong>Price:</strong> R5,000 - R10,000</li>
+                        </ul>
+
+                        <button class="btn primary-btn" onclick="window.location.href='packages.html#booking'">
+                            View Details
+                        </button>
+                    </article>
+
+                    <!-- E-commerce Package -->
+                    <article class="main-package-card">
+
+                        <!-- Icon -->
+                        <div class="home-package-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+
+                        <!-- Pricing Badge -->
+                        <span class="price-badge">From R8,000</span>
+
+                        <h3>E-commerce Website</h3>
                         <p>
-                            Creative direction and hands-on assistance for photo and video shoots, using your equipment
-                            to capture moments and tell your story.
+                            Sell products online with a secure, fast and well-designed online store.
+                            Ideal for businesses, brands and entrepreneurs ready to scale.
                         </p>
-                    </div>
+
+                        <ul class="package-details">
+                            <li><strong>Pages:</strong> 5 - 15+</li>
+                            <li><strong>Price:</strong> R8,000 - R18,000</li>
+                        </ul>
+
+                        <button class="btn primary-btn" onclick="window.location.href='packages.html#ecommerce'">
+                            View Details
+                        </button>
+                    </article>
+
                 </div>
             </div>
         </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <header class="projects-section-header">
+                <h2>Featured Projects</h2>
+                <p class="intro">
+                    A collection of the websites I've built. Each one reflects real client needs and clean execution.
+                </p>
+            </header>
+
+            <div class="projects-timeline">
+
+                <!-- Project 1 -->
+                <div class="timeline-item left">
+                    <div class="main-project-card">
+                        <img src="images/projects/portfolio.png" alt="Portfolio Website Project">
+                        <div class="project-info">
+                            <h3>Personal Portfolio</h3>
+                            <p>My portfolio website showcasing responsive design and custom UI elements.</p>
+                            <a class="project-btn" href='index.html'>View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="timeline-item right">
+                    <div class="main-project-card">
+                        <img src="images/projects/mrevamedia.png" alt="Mreva Media Website Project">
+                        <div class="project-info">
+                            <h3>Mreva Media</h3>
+                            <p>A full website for a photography business with bookings and service pages.</p>
+                            <a class="project-btn" href='https://www.mrevamedia.co.za' target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="timeline-item left">
+                    <div class="main-project-card">
+                        <img src="images/projects/grootmanfragrances.png" alt="Grootman Fragrances Website Project">
+                        <div class="project-info">
+                            <h3>Grootman Fragrances</h3>
+                            <p>E-commerce store with product listings and a complete shopping experience.</p>
+                            <a class="project-btn" href='https://www.grootmanfragrances.co.za' target="_blank">View
+                                Project</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Call-to-Action Section -->
+        <section class="bottom-cta">
+            <div class="bottom-cta-container">
+                <h2>Ready to Bring Your Project to Life?</h2>
+                <p class="bottom-cta-text">
+                    Whether you need a portfolio, booking website, or an e-commerce store, I build clean and modern
+                    sites that match your goals and brand.
+                </p>
+
+                <div class="bottom-cta-buttons">
+                    <button class="bottom-btn first-btn" onclick="window.location.href='contact.html'">
+                        Get a Quote
+                    </button>
+
+                    <button class="bottom-btn sec-btn" onclick="window.location.href='packages.html'">
+                        View Packages
+                    </button>
+                </div>
+            </div>
+        </section>
+
 
     </main>
 
+    <!-- Footer -->
     <footer class="site-footer">
-        <p>&copy; 2025 Mlamuli Biyela | Powered by Peacemaker Dev</p>
+        <div class="container footer-container">
+            <div class="footer-branding">
+                <h4>Peacemaker Dev</h4>
+                <img src="images/logo.png" alt="Peacemaker Dev Logo" width="100">
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="work.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Email: <a href="mailto:mlamulipeace01@gmail.com">mlamulipeace01@gmail.com</a></p>
+                <p>Phone: <a href="tel:+27791681131">+27 79 168 1131</a></p>
+                <div class="social-links">
+                    <a href="https://github.com/peacemaker-dev" target="_blank"><img class="link-image" src="images/icons/github.png" width="40"></a>
+                    <a href="https://www.linkedin.com/in/mlamuli-biyela" target="_blank"><img class="link-image" src="images/icons/linkedin.png" width="40"></a>
+                    <a href="https://www.instagram.com/peacemaker.dev" target="_blank"><img class="link-image" src="images/icons/social.png" width="40"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Mlamuli Biyela | Powered by <span class="company-name">Peacemaker Dev</span></p>
+        </div>
     </footer>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Typing effect
-            const nameEl = document.querySelector('.name');
-            const fullText = "Mlamuli Biyela";
-            let i = 0;
+        // Toggle responsive menu
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.nav');
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        // Typing effect
+        document.addEventListener("DOMContentLoaded", () => {
+            const nameElement = document.querySelector(".name");
+            const text = "Mlamuli Biyela";
+            let index = 0;
 
             function type() {
-                if (i <= fullText.length) {
-                    nameEl.textContent = fullText.slice(0, i);
-                    i++;
+                if (index <= text.length) {
+                    nameElement.textContent = text.slice(0, index);
+                    index++;
                     setTimeout(type, 120);
                 }
             }
             type();
-
-            // Menu toggle for right-side slide-out menu
-            const menuToggle = document.querySelector('.menu-toggle');
-            const nav = document.querySelector('.nav');
-            const closeBtn = document.querySelector('.nav-links .close-btn');
-            const overlay = document.querySelector('.menu-overlay');
-
-            function openMenu() {
-                nav.style.right = "0";
-                overlay.style.display = "block";
-            }
-
-            function closeMenu() {
-                nav.style.right = "-40%";
-                overlay.style.display = "none";
-            }
-
-            menuToggle.addEventListener('click', openMenu);
-            closeBtn.addEventListener('click', closeMenu);
-            overlay.addEventListener('click', closeMenu);
         });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const items = document.querySelectorAll(".timeline-item");
+
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("show");
+                            observer.unobserve(entry.target); // Animate once only
+                        }
+                    });
+                },
+                {
+                    threshold: 0.2 // Trigger when 20% of the card is visible
+                }
+            );
+
+            items.forEach(item => observer.observe(item));
+        });
+
     </script>
+
 
 </body>
 

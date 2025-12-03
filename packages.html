@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages | Peacemaker Dev</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Unica+One&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Peacemaker Dev Logo" width="50"></a>
+        </div>
+        <nav class="nav" aria-label="Main Navigation">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+    </header>
+
+
+    <main class="packages-main">
+
+        <!-- Tabs -->
+        <div class="package-tabs">
+            <button class="tab-button active" data-target="portfolio">Portfolio Websites</button>
+            <button class="tab-button" data-target="booking">Booking Websites</button>
+            <button class="tab-button" data-target="ecommerce">E-commerce Websites</button>
+        </div>
+
+        <!-- PORTFOLIO SECTION -->
+        <section id="portfolio" class="tab-section active">
+            <div class="section-intro">
+                <!-- Icon -->
+                <div class="package-icon">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <h2>Portfolio Websites</h2>
+                <p><strong>Best for:</strong> Personal branding, showcasing work, attracting clients.</p>
+                <p><strong>Who it's for:</strong> Photographers, videographers, designers, freelancers, writers.</p>
+            </div>
+
+            <div class="package-cards">
+                <!-- Basic -->
+                <div class="package-card basic">
+                    <div class="card-header">
+                        <h3>Basic</h3>
+                        <p class="pages">3 Pages</p>
+                    </div>
+                    <div class="card-icon">
+                        <img src="images/icons/basic-portfolio.svg" alt="Portfolio Icon"/>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Home, About, Contact</li>
+                            <li>Responsive design</li>
+                            <li>Social links</li>
+                            <li>Basic SEO</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <p class="price">R 3,000</p>
+                    </div>
+                </div>
+
+                <!-- Standard -->
+                <div class="package-card standard">
+                    <div class="card-header">
+                        <h3>Standard</h3>
+                        <p class="pages">5 Pages</p>
+                    </div>
+                    <div class="card-icon">
+                        <img src="images/icons/standard-portfolio.svg" alt="Portfolio Icon"/>      
+                    </div>
+                <div class=" card-body">
+                        <ul>
+                            <li>Basic + Portfolio/Gallery</li>
+                            <li>Simple animations</li>
+                            <li>Contact form + Google Maps</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <p class="price">R 5,000</p>
+                    </div>
+                </div>
+
+                <!-- Premium -->
+                <div class="package-card premium">
+                    <span class="badge">Popular</span>
+                    <div class="card-header">
+                        <h3>Premium</h3>
+                        <p class="pages">7 Pages</p>
+                    </div>
+                    <div class="card-icon">
+                        <img src="images/icons/premium-portfolio.svg" alt="Portfolio Icon"/>       
+                    </div>
+                <div class=" card-body">
+                        <ul>
+                            <li>Standard + CMS (WordPress or custom)</li>
+                            <li>Blog section</li>
+                            <li>SEO + analytics setup</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <p class="price">R 7,500</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BOOKING SECTION -->
+        <section id="booking" class="tab-section">
+            <div class="section-intro">
+                <!-- Icon -->
+                <div class="package-icon">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <h2>Booking Websites</h2>
+                <p><strong>Best for:</strong> Service-based businesses needing scheduling.</p>
+                <p><strong>Who it's for:</strong> Photographers, salons, fitness trainers, tutors, event planners.</p>
+            </div>
+
+            <div class="package-cards">
+                <!-- Basic -->
+                <div class="package-card basic">
+                    <div class="card-header">
+                        <h3>Basic</h3>
+                        <p class="pages">4 Pages</p>
+                    </div>
+                    <div class="card-icon">
+                    <img src="images/icons/booking-standard.svg" alt="Booking Icon"/>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Home, About, Services, Contact</li>
+                            <li>Simple booking form</li>
+                            <li>Mobile responsive</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <p class="price">R 5,000</p>
+                    </div>
+                </div>
+
+                <!-- Standard -->
+                <div class="package-card standard">
+                    <div class="card-header">
+                        <h3>Standard</h3>
+                        <p class="pages">6 Pages</p>
+                    </div>
+                    <div class="card-icon">
+                        <img src="images/icons/booking-basic.svg" alt="Booking Icon"/>
+                    </div>         
+                        <div class=" card-body">
+                        <ul>
+                            <li>Basic + Booking calendar</li>
+                            <li>Email notifications</li>
+                            <li>Service listing</li>
+                            <li>CMS for updates</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <p class="price">R 7,500</p>
+                    </div>
+                </div>
+
+                <!-- Premium -->
+                <div class="package-card premium">
+                    <span class="badge">Popular</span>
+                    <div class="card-header">
+                        <h3>Premium</h3>
+                        <p class="pages">8+ Pages</p>
+                    </div>
+                    <div class="card-icon">
+                        <img src="images/icons/ecommerce-premium.svg" alt="Booking Icon"/>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Standard + Online payments</li>
+                            <li>Customer accounts</li>
+                            <li>Analytics</li>
+                            <li>Maintenance & support option</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <p class="price">R 10,000</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- E-COMMERCE SECTION -->
+        <section id="ecommerce" class="tab-section">
+            <div class="section-intro">
+                <!-- Icon -->
+                <div class="package-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <h2>E-commerce Websites</h2>
+                <p><strong>Best for:</strong> Selling products online.</p>
+                <p><strong>Who it's for:</strong> Online boutiques, gadget stores, merch stores, food & delivery.</p>
+            </div>
+
+            <div class="package-cards">
+                <!-- Basic -->
+                <div class="package-card basic">
+                    <div class="card-header">
+                        <h3>Basic</h3>
+                        <p class="pages">5 Pages</p>
+                    </div>
+                    <div class="card-icon">
+                        <img src="images/icons/ecommerce-basic.svg" alt="E-commerce Icon"/>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Home, Products, Cart, Checkout, Contact</li>
+                            <li>Up to 5 products</li>
+                            <li>Payment integration</li>
+                            <li>Responsive layout</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <p class="price">R 8,000</p>
+                    </div>
+                </div>
+
+                <!-- Standard -->
+                <div class="package-card standard">
+                    <div class="card-header">
+                        <h3>Standard</h3>
+                        <p class="pages">10 Pages</p>
+                    </div>
+                    <div class="card-icon">
+                        <div class="card-icon">
+                        <img src="images/icons/ecommerce-standard.svg" alt="E-commerce Icon"/>
+                    </div>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Basic + 20 products</li>
+                            <li>Categories & filters</li>
+                            <li>Inventory management</li>
+                            <li>CMS for products</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <p class="price">R 12,000</p>
+                    </div>
+                </div>
+
+                <!-- Premium -->
+                <div class="package-card premium">
+                    <span class="badge">Popular</span>
+                    <div class="card-header">
+                        <h3>Premium</h3>
+                        <p class="pages">15+ Pages</p>
+                    </div>
+                    <div class="card-icon">
+                        <div class="card-icon">
+                        <img src="images/icons/ecommerce-premium.svg" alt="E-commerce Icon"/>
+                    </div>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Standard + 50+ products</li>
+                            <li>Advanced filters</li>
+                            <li>Multiple payment gateways</li>
+                            <li>Analytics & maintenance</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <p class="price">R 18,000</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OPTIONAL ADD-ONS -->
+        <section class="addons-section">
+            <h2>Optional Add-Ons</h2>
+            <ul class="addons-list">
+                <li>Extra pages (R500 - R1,000 per page)</li>
+                <li>Logo or branding design</li>
+                <li>Advanced animations</li>
+                <li>Copywriting for pages</li>
+                <li>Monthly maintenance plans</li>
+            </ul>
+            <p class="delivery-note">
+                <strong>How content is delivered:</strong> Text, images, and project details can be sent via Email,
+                WhatsApp, or Google Drive.
+                You'll receive updates throughout development.
+            </p>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-branding">
+                <h4>Peacemaker Dev</h4>
+                <img src="images/logo.png" alt="Peacemaker Dev Logo" width="100">
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="work.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Email: <a href="mailto:mlamulipeace01@gmail.com">mlamulipeace01@gmail.com</a></p>
+                <p>Phone: <a href="tel:+27791681131">+27 79 168 1131</a></p>
+                <div class="social-links">
+                    <a href="https://github.com/peacemaker-dev" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/mlamuli-biyela" target="_blank">LinkedIn</a>
+                    <a href="https://www.instagram.com/peacemaker.dev" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Mlamuli Biyela | Powered by <span class="company-name">Peacemaker Dev</span></p>
+        </div>
+    </footer>
+    <script>
+        // Toggle responsive menu
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.nav');
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const tabButtons = document.querySelectorAll(".tab-button");
+            const tabSections = document.querySelectorAll(".tab-section");
+
+            tabButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                    // Remove active class from all buttons
+                    tabButtons.forEach(btn => btn.classList.remove("active"));
+                    // Add active class to clicked button
+                    button.classList.add("active");
+
+                    // Hide all sections
+                    tabSections.forEach(section => section.classList.remove("active"));
+                    // Show target section
+                    const target = button.getAttribute("data-target");
+                    document.getElementById(target).classList.add("active");
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

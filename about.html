@@ -9,112 +9,195 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Unica+One&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="mystyles.css">
-
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
+    <header class="site-header">
         <div class="logo">
-            <img src="images/logo.png" alt="Peacemaker Dev Logo" width="80">
+            <a href="index.html"><img src="images/logo.png" alt="Peacemaker Dev Logo" width="50"></a>
         </div>
-        <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
         <nav class="nav" aria-label="Main Navigation">
             <ul class="nav-links">
-                <li class="close-btn">&times;</li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="work.html">Work</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
     </header>
 
     <section class="about-hero">
-        <h2>About Me</h2>
-        <div class="about-image">
-            <img src="images/mlamuli.png" alt="Mlamuli Biyela">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Mlamuli Biyela</h1>
+                <h2>Aspiring Software Engineer & Freelance Developer</h2>
+                <p>Creating clean, functional websites and digital solutions that help you or your business shine
+                    online.</p>
+            </div>
+            <div class="hero-image">
+                <img src="images/mlamuli.png" alt="Mlamuli Biyela Portrait">
+            </div>
         </div>
     </section>
 
     <main>
-        <section class="about-content" id="about">
-            <div class="about-info-box">
-                <h3><span class="emoji">👤</span> Personal Info</h3>
-                <p><strong>🤵 Name(s):</strong> Mlamuli "Peacemaker"</p>
-                <p><strong>👨‍🦱 Surname:</strong> Biyela.</p>
-                <p><strong>📍 Hometown:</strong> Mandeni, KwaZulu-Natal.</p>
-                <p><strong>🏙️ Current:</strong> Pretoria, Gauteng.</p>
-                <p><strong>🗣 Languages:</strong> IsiZulu, English.</p>
-            </div>
-
-            <div class="about-info-box">
-                <h3><span class="emoji">🚀</span> My Journey</h3>
-                <p>I am currently a second-year IT student at Tshwane University of Technology.
-                    I chose this path out of curiosity about how software works and a deep interest in solving problems
-                    using technology.
-                </p>
-            </div>
-
-            <div class="about-info-box">
-                <h3><span class="emoji">💡</span> What I Enjoy</h3>
-                <p>I love solving logic problems, building apps, and helping people with practical digital solutions.
-                    I enjoy turning ideas into working software and learning something new in the process.
-                </p>
-            </div>
-
-            <div class="about-info-box">
-                <h3><span class="emoji">🧑‍💻</span> Freelance Work</h3>
-                <p>I work under the name <strong><span style="color:#00f0ff;">Peacemaker Dev</span></strong> to build
-                    clean and functional websites for businesses and individuals.
-                    I also freelance as a photographer and videographer, capturing events like weddings, graduations,
-                    and ceremonies.
-                </p>
-            </div>
-
-            <div class="about-info-box">
-                <h3><span class="emoji">📈</span> Challenges and Growth</h3>
-                <p>Balancing school and freelancing is not always easy, but it keeps me motivated.
-                    Every project I complete helps me grow my skills and move closer to becoming a well-rounded software
-                    engineer.
-                </p>
-            </div>
-
-            <div class="about-info-box">
-                <h3><span class="emoji">🌐</span> Outside of Tech</h3>
-                <p>When I'm not coding or working on shoots, I focus on learning new tools, exploring technology, and
-                    planning for the future.</p>
-            </div>
-
-            <div class="about-info-box">
-                <h3><span class="emoji">🔍</span> Want to Know More?</h3>
-                <p>Explore the sections above to see how I turn code into solutions.</p>
+       
+        <!-- Personal Info -->
+        <section class="personal-info">
+            <h2>Personal Information</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <span class="icon">👤</span>
+                    <p><strong>Name:</strong><br /> Mlamuli "Peacemaker" Biyela</p>
+                </div>
+                <div class="info-card">
+                    <span class="icon">📍</span>
+                    <p><strong>Location:</strong><br /> Pretoria, Gauteng</p>
+                </div>
+                <div class="info-card">
+                    <span class="icon">🏠</span>
+                    <p><strong>Home:</strong><br /> Mandeni, KZN</p>
+                </div>
+                <div class="info-card">
+                    <span class="icon">🗣️</span>
+                    <p><strong>Languages:</strong><br /> IsiZulu, English</p>
+                </div>
+                <div class="info-card">
+                    <span class="icon">📧</span>
+                    <p><strong>Email:</strong><br /> mlamulipeace01@gmail.com</p>
+                </div>
+                <div class="info-card">
+                    <span class="icon">📞</span>
+                    <p><strong>Phone:</strong><br /> +27 79 168 1131</p>
+                </div>
             </div>
         </section>
+         <!-- About Me Section -->
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>
+                Hi! I'm <strong>Mlamuli Biyela</strong>, also known as <strong>Peacemaker</strong>. I’m a second-year IT
+                student at
+                Tshwane University of Technology with a passion for coding, problem-solving, and creating digital
+                solutions.
+                I enjoy turning complex ideas into simple, functional websites and applications that make a real impact.
+                Beyond coding, I love exploring technology, freelancing as a web developer, and capturing moments
+                through
+                photography and videography. My goal is to grow into a well-rounded Software Engineer while helping
+                businesses
+                and individuals bring their ideas to life online.
+            </p>
+        </section>
+
+        <!-- My Journey Section -->
+        <section class="my-journey">
+            <h2>My Journey</h2>
+            <p>
+                Ever since I was curious about how software works, I’ve been fascinated by technology and the way it can
+                solve real-world problems.
+                My journey began with experimenting with small programs and exploring how websites are built. Over time,
+                I realized
+                that I could combine creativity and logic to create digital solutions that help people and businesses.
+                This led me to pursue a Diploma in IT at Tshwane University of Technology, where I’m constantly learning
+                new skills
+                in web development, programming, and networking. My goal is to grow into a Software Engineer who can
+                build not just functional,
+                but innovative and impactful software.
+            </p>
+        </section>
+
+
+        <!-- Education & Certifications -->
+        <section class="education">
+            <h2>Education & Certifications</h2>
+            <ul>
+                <li><strong>Diploma in IT</strong> - Tshwane University of Technology (Current, 2nd Year)</li>
+                <li>Relevant certifications / courses (to add later)</li>
+            </ul>
+        </section>
+
+        <!-- Skills -->
+        <section class="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">Java</div>
+                <div class="skill-card">HTML</div>
+                <div class="skill-card">CSS</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">Networking Basics</div>
+                <div class="skill-card">Problem-Solving</div>
+            </div>
+        </section>
+
+        <!-- Achievements & Growth -->
+        <section class="achievements">
+            <h2>Achievements & Growth</h2>
+            <ul>
+                <li>Balancing studies with freelancing projects successfully.</li>
+                <li>Gained real-world development and client experience.</li>
+                <li>Improved skills in web design, problem-solving, and creativity.</li>
+            </ul>
+        </section>
+
+        <!-- Hobbies / Interests -->
+        <section class="hobbies">
+            <h2>Outside of Tech</h2>
+            <p>When I'm not coding or working on projects, I enjoy learning new tools, exploring technology, and
+                capturing moments with photography and videography.</p>
+        </section>
+
+        <!-- CTA -->
+        <section class="about-cta">
+            <h2>Interested in Working Together?</h2>
+            <p>If you want to build a website or digital solution, I can help bring your ideas to life.</p>
+            <button class="about-cta-btn" onclick="window.location.href='contact.html'">Get in Touch</button>
+        </section>
     </main>
+
+    <!-- Footer -->
     <footer class="site-footer">
-        <p>&copy; 2025 Mlamuli Biyela | Powered by Peacemaker Dev</p>
+        <div class="container footer-container">
+            <div class="footer-branding">
+                <h4>Peacemaker Dev</h4>
+                <img src="images/logo.png" alt="Peacemaker Dev Logo" width="100">
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="work.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Email: <a href="mailto:mlamulipeace01@gmail.com">mlamulipeace01@gmail.com</a></p>
+                <p>Phone: <a href="tel:+27791681131">+27 79 168 1131</a></p>
+                <div class="social-links">
+                    <a href="https://github.com/peacemaker-dev" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/mlamuli-biyela" target="_blank">LinkedIn</a>
+                    <a href="https://www.instagram.com/peacemaker.dev" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Mlamuli Biyela | Powered by <span class="company-name">Peacemaker Dev</span></p>
+        </div>
     </footer>
     <script>
-        // Menu toggle for right-side slide-out menu
+        // Toggle responsive menu
         const menuToggle = document.querySelector('.menu-toggle');
         const nav = document.querySelector('.nav');
-        const closeBtn = document.querySelector('.nav-links .close-btn');
-        const overlay = document.querySelector('.menu-overlay');
-
-        function openMenu() {
-            nav.style.right = "0";
-            overlay.style.display = "block";
-        }
-
-        function closeMenu() {
-            nav.style.right = "-40%";
-            overlay.style.display = "none";
-        }
-
-        menuToggle.addEventListener('click', openMenu);
-        closeBtn.addEventListener('click', closeMenu);
-        overlay.addEventListener('click', closeMenu);
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
     </script>
 </body>
 
