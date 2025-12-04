@@ -1422,6 +1422,10 @@ body {
 }
 
 @media (max-width: 500px) {
+    .package-tabs {
+        flex-direction: column;
+        gap: 8px;
+    }
     .tab-button {
         width: 100%;
         text-align: center;
