@@ -4,15 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Peacemaker Dev</title>
+
+    <!-- Page Title -->
+    <title>Contact | Peacemaker Dev – Website Developer in South Africa</title>
+
+    <!-- Meta Description -->
+    <meta name="description" 
+          content="Contact Peacemaker Dev (Mlamuli Biyela) for professional website development, portfolio sites, business websites, and custom web solutions in South Africa. Fast response guaranteed.">
+
+    <!-- Keywords -->
+    <meta name="keywords" 
+          content="Peacemaker Dev, Mlamuli Biyela, web developer South Africa, website designer SA, IT student TUT, portfolio developer, affordable websites, Pretoria web developer, contact web developer">
+
+    <!-- Author -->
+    <meta name="author" content="Mlamuli Biyela">
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:title" content="Contact Peacemaker Dev – Web Developer South Africa">
+    <meta property="og:description" content="Get in touch with Mlamuli Biyela for professional website development. Business websites, portfolios, templates, and custom web projects.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.co.za/contact.html">
+    <meta property="og:image" content="https://yourdomain.co.za/images/preview-contact.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Peacemaker Dev – Web Developer South Africa">
+    <meta name="twitter:description" content="Reach out to Mlamuli Biyela for clean, modern, and professional website design or development.">
+    <meta name="twitter:image" content="https://yourdomain.co.za/images/preview-contact.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourdomain.co.za/contact.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Unica+One&display=swap"
         rel="stylesheet">
-    <!-- Font Awesome for Icons -->
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 
 <body>
     <header class="site-header">
@@ -24,111 +60,126 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
     </header>
     
-    <main>
-        <section class="contact-header">
-            <h2>Get in Touch</h2>
-            <p>Whether you're interested in working together, have a question, or just want to connect. I'd love to hear from you!</p>
-        </section>
-        
-        <!-- Contact Methods -->
-        <section class="contact-info">
-            <ul>
-                <li>
-                    <img class="contact-icons" src="images/email.png" alt="Email Icon"/>
-                    <a class="social-media-links" href="mailto:mlamulipeace01@gmail.com">mlamulipeace01@gmail.com</a>
-                </li>
-                <li>
-                    <img class="contact-icons" src="images/call.png" alt="Contact Icon"/>
-                    <a class="social-media-links" href="tel:0791681131">079-168-1131</a>
-                </li>
-            </ul>
-        </section>
+    <main class="contact-main">
 
-        <!-- Contact Form -->
-        <section class="contact-form">
-            <h3>Send a Message</h3>
-            <p>Fill in the form below and I'll get back to you as soon as I can.</p>
-            <form id="booking-form" action="https://formsubmit.co/mlamulipeace01@gmail.com" method="POST">
-                <!-- Hidden Inputs -->
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://peacemaker-dev.github.io/Portfolio/thank-you.html"><!-- Redirect to thank-you page -->
+    <!-- Contact Intro -->
+    <section class="contact-header">
+        <h1>Get In Touch</h1>
+        <p>If you have a project in mind or need a website developed, reach out. I respond quickly.</p>
+    </section>
 
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="e.g. John Doe" required />
+    <!-- Contact Container -->
+    <section class="contact-container">
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="e.g. johndoe@gmail.com" required />
+        <!-- Left: Contact Info -->
+        <div class="contact-info">
+            <h2>Contact Details</h2>
 
-                <label for="number">Contact:</label>
-                <input type="tel" name="number" id="number" required 
-                    pattern="^0[6-8][0-9]{8}$" 
-                    placeholder="e.g. 0712345678"
-                    title="Enter a valid South African number e.g. 0712345678"/>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <p><a href="mailto:mlamulipeace01@gmail.com">mlamulipeace01@gmail.com</a></p>
+            </div>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="6" required></textarea>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <p><a href="tel:+27791681131">+27 79 168 1131</a></p>
+            </div>
 
-                <button class="form-btn" type="submit" id="submit">Send Message</button>
-            </form>
-        </section>
+            <div class="info-item">
+                <i class="fas fa-whatsapp"></i>
+                <p><a href="https://wa.me/27791681131" target="_blank">Chat on WhatsApp</a></p>
+            </div>
 
-        <!-- Social Media -->
-        <section class="social-media">
-            <h3>Connect with Me</h3>
-            <p>Follow or message me through my social platforms:</p>
-            <ul>
-                <li>
-                    <a class="social-media-links" href="https://www.linkedin.com/in/mlamuli-biyela-178406276?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="images/linkedin.png" alt="LinkedIn Icon"/></a><br/>
-                    <label for="linkedin">LinkedIn</label>
-                </li>
-                <li>
-                    <a class="social-media-links" href="https://github.com/peacemaker-dev" target="_blank"><img src="images/github.png" alt="GitHub Icon"/></a><br/>
-                    <label for="github">GitHub</label>
-                </li>
-                <li>
-                    <a class="social-media-links" href="https://www.instagram.com/peacemaker_dev?igsh=MTNwOHB6ZHpqNzQ5OQ==" target="_blank"><img src="images/social.png" alt="Instagram Icon"/></a><br/>
-                    <label for="instagram">Instagram</label>
-                </li>
-                <li>
-                    <a class="social-media-links" href="https://www.facebook.com/profile.php?id=61577854126373&mibextid=ZbWKwL" target="_blank"><img src="images/facebook.png" alt="Facebook Icon"/></a><br/>
-                    <label for="facebook">Facebook</label>
-                </li>
-                <li>
-                    <a class="social-media-links" href="https://www.tiktok.com/@peacemaker_dev?_t=ZS-8yryG6fFknQ&_r=1" target="_blank"><img src="images/tik-tok.png" alt="TikTok Icon"/></a><br/>
-                    <label for="tiktok">TikTok</label>
-                </li>
-            </ul>
-        </section>
-    </main>
+            <div class="info-item">
+                <i class="fas fa-folder-open"></i>
+                <p>You can send your project files through Email, WhatsApp, or Google Drive.</p>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/peacemaker-dev" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mlamuli-biyela-178406276?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/peacemaker_dev?igsh=MTNwOHB6ZHpqNzQ5OQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <form class="contact-form">
+            <h2>Send a Message</h2>
+
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Contact</label>
+                <input type="tel" placeholder="Enter your contact number" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Message</label>
+                <textarea rows="5" placeholder="Tell me about your project" required></textarea>
+            </div>
+
+            <button type="submit" class="send-btn">Send Message</button>
+        </form>
+
+    </section>
+
+</main>
+
+    <!-- Footer -->
     <footer class="site-footer">
-        <p>&copy; 2025 Mlamuli Biyela | Powered by Peacemaker Dev</p>
+        <div class="container footer-container">
+            <div class="footer-branding">
+                <h4>Peacemaker Dev</h4>
+                <img src="images/logo.png" alt="Peacemaker Dev Logo" width="100">
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Email: <a href="mailto:mlamulipeace01@gmail.com">mlamulipeace01@gmail.com</a></p>
+                <p>Phone: <a href="tel:+27791681131">+27 79 168 1131</a></p>
+                <div class="social-links">
+                    <a href="https://github.com/peacemaker-dev" target="_blank"><img class="link-image" src="images/icons/github.png" width="30"></a>
+                    <a href="https://www.facebook.com/profile.php?id=61577854126373&mibextid=ZbWKwL" target="_blank"><img class="link-image" src="images/icons/facebook.png" width="30"></a>
+                    <a href="https://www.linkedin.com/in/mlamuli-biyela-178406276?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><img class="link-image" src="images/icons/linkedin.png" width="30"></a>
+                    <a href="https://www.instagram.com/peacemaker_dev?igsh=MTNwOHB6ZHpqNzQ5OQ==" target="_blank"><img class="link-image" src="images/icons/social.png" width="30"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Mlamuli Biyela | Powered by <span class="company-name">Peacemaker Dev</span></p>
+        </div>
     </footer>
      <script>
-            // Menu toggle for right-side slide-out menu
-            const menuToggle = document.querySelector('.menu-toggle');
-            const nav = document.querySelector('.nav');
-            const closeBtn = document.querySelector('.nav-links .close-btn');
-            const overlay = document.querySelector('.menu-overlay');
-
-            function openMenu() {
-                nav.style.right = "0";
-                overlay.style.display = "block";
-            }
-
-            function closeMenu() {
-                nav.style.right = "-40%";
-                overlay.style.display = "none";
-            }
-
-            menuToggle.addEventListener('click', openMenu);
-            closeBtn.addEventListener('click', closeMenu);
-            overlay.addEventListener('click', closeMenu);
+        // Toggle responsive menu
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.nav');
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
     </script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Mlamuli Biyela</title>
+    <title>Thank You | Mlamuli Biyela</title>
   
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Unica+One&display=swap" rel="stylesheet">
@@ -11,26 +11,25 @@
 
 </head>
 <body>
-    <header>
+    <header class="site-header">
         <div class="logo">
-            <img src="images/logo.png" alt="Peacemaker Dev Logo" width="80">
+            <a href="index.html"><img src="images/logo.png" alt="Peacemaker Dev Logo" width="50"></a>
         </div>
-        <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
         <nav class="nav" aria-label="Main Navigation">
             <ul class="nav-links">
-                <li class="close-btn">&times;</li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="work.html">Work</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
     </header>
     
     <section class="thank-you-section">
         <h2>Thanks for reaching out!</h2>
         <p>I appreciate you taking the time to contact me. I'll reply shortly meanwhile, feel free to check out my work.</p>
-        <a href="work.html" class="btn-primary">View My Work</a>
+        <a href="projects.html" class="btn-primary">View My Work</a>
         <a href="index.html" class="btn-secondary">Back to Home</a>
     </section>
 
@@ -38,25 +37,13 @@
         <p>&copy; 2025 Mlamuli Biyela | Powered by Peacemaker Dev</p>
     </footer>
     <script>
-            // Menu toggle for right-side slide-out menu
-            const menuToggle = document.querySelector('.menu-toggle');
-            const nav = document.querySelector('.nav');
-            const closeBtn = document.querySelector('.nav-links .close-btn');
-            const overlay = document.querySelector('.menu-overlay');
-
-            function openMenu() {
-                nav.style.right = "0";
-                overlay.style.display = "block";
-            }
-
-            function closeMenu() {
-                nav.style.right = "-40%";
-                overlay.style.display = "none";
-            }
-
-            menuToggle.addEventListener('click', openMenu);
-            closeBtn.addEventListener('click', closeMenu);
-            overlay.addEventListener('click', closeMenu);
+        // Toggle responsive menu
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.nav');
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
     </script>
 </body>
 </html>

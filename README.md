@@ -46,9 +46,5 @@ All rights reserved. For licensing or collaboration inquiries, please contact th
 ## Notes
 
 - Built with plain HTML, CSS, and vanilla JavaScript — no build step required.
-- Several projects linked from `work.html` include PWA features (service worker, manifest) in their own repos.
+- Several projects linked from `projects.html` include PWA features (service worker, manifest) in their own repos.
 - The project is intended as a live portfolio and demonstration of frontend skills and small web apps.
-
----
-
-If you'd like, I can add a short `CONTRIBUTING.md`, a license file, or a minimal GitHub Actions workflow to auto-deploy `main` to GitHub Pages.
