@@ -1309,46 +1309,116 @@ body {
 .premium .price {
     color: #F1C40F;
 }
+/* ========================
+   ADD-ONS SECTION STYLING
+   ======================== */
 
-.addons-section {
-    margin-top: 70px;
-    padding-top: 40px;
-    border-top: 1px solid #133b57;
+.addon-tab-section {
+    padding: 60px 20px;
+    background-color: #000;
 }
 
-.addons-section h2 {
+.addon-section-intro h2 {
     text-align: center;
-    margin-bottom: 20px;
-    font-size: 1.8rem;
-    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #3792ee; /* primary blue */
 }
 
-.addons-list {
-    max-width: 600px;
-    margin: 0 auto 25px;
-    list-style: none;
-    padding: 0;
-}
-
-.addons-list li {
-    background: #0b1f35;
-    margin: 10px 0;
-    padding: 12px 15px;
-    border-radius: 10px;
-    border: 1px solid #12334e;
-    color: #e6e6e6;
-}
-
-.delivery-note {
+.addon-section-intro p {
     text-align: center;
-    color: #d0d0d0;
     font-size: 1rem;
+    color: #ccc; /* light gray text */
     max-width: 700px;
-    margin: 0 auto;
+    margin: 0 auto 40px auto;
+}
+.addon-package-icon {
+    font-size: 3rem;
+    color: #3792ee; /* primary blue */
+    text-align: center;
+    margin-bottom: 15px;
+}
+.addon-package-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-.delivery-note strong {
-    color: #00bfff;
+.addon-package-card {
+    background-color: #1a1a1a; /* dark card bg */
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #eee; /* text color */
+}
+
+.addon-package-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.8);
+}
+
+.addon-card-header {
+    padding: 20px 15px 10px 15px;
+    border-bottom: 1px solid #333;
+}
+
+.addon-card-header h3 {
+    font-size: 1.4rem;
+    color: #3792ee; /* primary blue */
+    margin-bottom: 5px;
+}
+
+.addon-price {
+    font-size: 1.1rem;
+    color: #eee; /* make prices visible on dark bg */
+    font-weight: 600;
+}
+
+.addon-card-body {
+    padding: 15px;
+    flex: 1;
+}
+
+.addon-card-body ul {
+    list-style: disc;
+    padding-left: 20px;
+    color: #ccc;
+}
+
+.addon-card-body ul li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+/*
+.addon-badge {
+    background-color: #3792ee; /* blue for popular 
+    color: #000;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border-radius: 50px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+*/
+.addon-delivery-note {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.95rem;
+    color: #ccc;
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+    .addon-package-cards {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media (max-width: 500px) {
@@ -1721,5 +1791,124 @@ body {
     .contact-form {
         width: 100%;
         max-width: 550px;
+    }
+}
+
+/*============================ Thank You Page Edits ============================*/
+.thankyou-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: #000;
+    color: #fff;
+}
+
+/* Container */
+.thankyou-container {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    background: rgba(255,255,255,0.05);
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+    animation: fadeSlideUp 0.7s ease forwards;
+}
+
+/* Check Icon */
+.icon-box {
+    font-size: 5rem;
+    color: #3ac77f;
+    margin-bottom: 1rem;
+}
+
+.icon-box i {
+    animation: pop 0.6s ease;
+}
+
+/* Headings */
+.thankyou-container h1 {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+/* Messages */
+.thank-msg {
+    font-size: 1.1rem;
+    color: #d4d4d4;
+    margin-bottom: 0.8rem;
+}
+
+.sub-msg {
+    font-size: 0.95rem;
+    color: #a8a8a8;
+    margin-bottom: 2rem;
+}
+
+/* Buttons */
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.cta-buttons .btn {
+    padding: 0.8rem 1.6rem;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    border: 2px solid #3792ee;
+    transition: 0.3s ease;
+}
+
+.back-home {
+    background-color: #3792ee;
+    color: #000;
+    border-color: #3792ee;
+}
+
+.view-projects {
+    background: transparent;
+    color: #3792ee;
+}
+
+.view-projects:hover {
+    background: #3792ee;
+    color: #000;
+}
+
+.back-home:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* Animations */
+@keyframes pop {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeSlideUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .thankyou-container {
+        padding: 2rem 1.2rem;
+    }
+    .thankyou-container h1 {
+        font-size: 1.9rem;
+    }
+    .cta-buttons .btn {
+        font-size: 0.9rem;
+        padding: 0.7rem 1.2rem;
     }
 }

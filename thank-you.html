@@ -7,68 +7,34 @@
   
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Unica+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="mystyles.css">
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 <body>
-    <header class="site-header">
-        <div class="logo">
-            <a href="index.html"><img src="images/logo.png" alt="Peacemaker Dev Logo" width="50"></a>
-        </div>
-        <nav class="nav" aria-label="Main Navigation">
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
-    </header>
     
-    <section class="thank-you-section">
-        <h2>Thanks for reaching out!</h2>
-        <p>I appreciate you taking the time to contact me. I'll reply shortly meanwhile, feel free to check out my work.</p>
-        <a href="projects.html" class="btn-primary">View My Work</a>
-        <a href="index.html" class="btn-secondary">Back to Home</a>
+    <main class="thankyou-page">
+
+    <section class="thankyou-container">
+        <div class="icon-box">
+            <i class="fa-solid fa-check-circle"></i>
+        </div>
+
+        <h1>Thank You</h1>
+        <p class="thank-msg">
+            Your message has been received. I’ll go through it and get back to you shortly.
+        </p>
+
+        <p class="sub-msg">
+            If your enquiry is urgent, feel free to reach me directly through WhatsApp or email.
+        </p>
+
+        <div class="cta-buttons">
+            <a href="index.html" class="btn back-home">Back to Home</a>
+            <a href="projects.html" class="btn view-projects">View Projects</a>
+        </div>
     </section>
 
-     <footer class="site-footer">
-        <div class="container footer-container">
-            <div class="footer-branding">
-                <h4>Peacemaker Dev</h4>
-                <img src="images/logo.png" alt="Peacemaker Dev Logo" width="100">
-            </div>
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="packages.html">Packages</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-contact">
-                <h4>Contact</h4>
-                <p>Email: <a href="mailto:mlamuli@peacemakerdev.co.za">mlamuli@peacemakerdev.co.za</a></p>
-                <p>Phone: <a href="tel:+27791681131">+27 79 168 1131</a></p>
-                <div class="social-links">
-                    <a href="https://github.com/peacemaker-dev" target="_blank"><img class="link-image"
-                            src="images/icons/github.png" width="30"></a>
-                    <a href="https://www.facebook.com/profile.php?id=61577854126373&mibextid=ZbWKwL"
-                        target="_blank"><img class="link-image" src="images/icons/facebook.png" width="30"></a>
-                    <a href="https://www.linkedin.com/in/mlamuli-biyela-178406276?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-                        target="_blank"><img class="link-image" src="images/icons/linkedin.png" width="30"></a>
-                    <a href="https://www.instagram.com/peacemaker_dev?igsh=MTNwOHB6ZHpqNzQ5OQ==" target="_blank"><img
-                            class="link-image" src="images/icons/social.png" width="30"></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Mlamuli Biyela | Powered by <span class="company-name">Peacemaker Dev</span></p>
-        </div>
-    </footer>
+</main>
     <script>
         // Toggle responsive menu
         const menuToggle = document.querySelector('.menu-toggle');
