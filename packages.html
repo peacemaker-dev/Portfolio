@@ -49,14 +49,14 @@
 <body>
     <header class="site-header">
         <div class="logo">
-            <a href="index.html"><img src="images/logo.png" alt="Peacemaker Dev Logo" width="50"></a>
+            <a href="https://www.peacemakerdev.co.za/"><img src="images/logo.png" alt="Peacemaker Dev Logo" width="50"></a>
         </div>
         <nav class="nav" aria-label="Main Navigation">
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://www.peacemakerdev.co.za/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/contact">Contact</a></li>
             </ul>
         </nav>
         <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
@@ -460,11 +460,11 @@
             <div class="footer-links">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="packages.html">Packages</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://www.peacemakerdev.co.za/">Home</a></li>
+                    <li><a href="/packages">Packages</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
@@ -484,7 +484,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Mlamuli Biyela | Powered by <span class="company-name">Peacemaker Dev</span></p>
+            <p>&copy; <span id="year"></span> Mlamuli Biyela | Powered by <span class="company-name">Peacemaker Dev</span></p>
         </div>
     </footer>
     <script>
@@ -517,6 +517,8 @@
                 });
             });
         });
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 
 </body>

@@ -24,7 +24,7 @@
     <meta property="og:description"
         content="Get in touch with Mlamuli Biyela for professional website development. Business websites, portfolios, templates, and custom web projects.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://peacemakerdev.co.za/contact.html">
+    <meta property="og:url" content="https://peacemakerdev.co.za//contact">
     <meta property="og:image" content="https://peacemakerdev.co.za/images/preview-contact.jpg">
 
     <!-- Twitter Card -->
@@ -35,7 +35,7 @@
     <meta name="twitter:image" content="https://peacemakerdev.co.za/images/preview-contact.jpg">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://peacemakerdev.co.za/contact.html">
+    <link rel="canonical" href="https://peacemakerdev.co.za//contact">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/logo.png">
@@ -55,14 +55,14 @@
 <body>
     <header class="site-header">
         <div class="logo">
-            <a href="index.html"><img src="images/logo.png" alt="Peacemaker Dev Logo" width="50"></a>
+            <a href="https://www.peacemakerdev.co.za/"><img src="images/logo.png" alt="Peacemaker Dev Logo" width="50"></a>
         </div>
         <nav class="nav" aria-label="Main Navigation">
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://www.peacemakerdev.co.za/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/contact">Contact</a></li>
             </ul>
         </nav>
         <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
@@ -160,11 +160,11 @@
             <div class="footer-links">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="packages.html">Packages</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://www.peacemakerdev.co.za/">Home</a></li>
+                    <li><a href="/packages">Packages</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
@@ -184,7 +184,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Mlamuli Biyela | Powered by <span class="company-name">Peacemaker Dev</span></p>
+            <p>&copy; <span id="year"></span> Mlamuli Biyela | Powered by <span class="company-name">Peacemaker Dev</span></p>
         </div>
     </footer>
     <script>
@@ -195,6 +195,8 @@
             nav.classList.toggle('active');
             menuToggle.classList.toggle('active');
         });
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 </body>
 

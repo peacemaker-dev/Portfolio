@@ -9,7 +9,7 @@
 
     <!-- Primary Meta Description -->
     <meta name="description"
-        content="Portfolio of Mlamuli Biyela, a Web Developer and aspiring Software Engineer based in South Africa. I create clean, functional, modern websites for businesses and individuals. View my projects, pricing packages, and contact me for your next website.">
+content="Portfolio of Pretoria-based Web Developer Mlamuli Biyela, originally from Mandeni, KZN. I build clean, modern, high-performance websites for businesses and individuals in Gauteng, KwaZulu-Natal, and across South Africa.">
 
     <!-- Keywords -->
     <meta name="keywords"
@@ -21,7 +21,7 @@
     <!-- Open Graph (Facebook, LinkedIn) -->
     <meta property="og:title" content="Mlamuli Biyela | Web Developer & Software Engineer Portfolio">
     <meta property="og:description"
-        content="Explore my portfolio, web development packages, and completed projects. I build modern and professional websites that help brands stand out.">
+content="Pretoria-based Web Developer from Mandeni, KZN. Explore my portfolio, pricing, and modern website projects crafted for businesses across Gauteng and KwaZulu-Natal.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://peacemakerdev.co.za/">
     <meta property="og:image" content="https://peacemakerdev.co.za/images/preview-projects.png">
@@ -31,10 +31,10 @@
     <meta name="twitter:title" content="Mlamuli Biyela | Web Developer Portfolio">
     <meta name="twitter:description"
         content="Clean, modern, and functional websites built for businesses and individuals. View my projects and contact me today.">
-    <meta name="twitter:image" content="https://peacemakerdev.co.za/images/preview-projects.png">
+    <meta name="twitter:image" content="https://peacemakerdev.co.za/images/peacemaker-dev-logo.jpg">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="icon" type="image/png" href="https://peacemakerdev.co.za/images/peacemaker-dev-logo.jpg">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Unica+One&display=swap"
@@ -48,23 +48,28 @@
 
     <script type="application/ld+json">
         {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Mlamuli Biyela",
-        "jobTitle": "Web Developer & Aspiring Software Engineer",
-        "url": "https://peacemakerdev.co.za/",
-        "image": "https://peacemakerdev.co.za/images/preview.png",
-        "sameAs": [
-            "https://github.com/peacemaker-dev",
-            "https://www.linkedin.com/in/mlamuli-biyela-178406276?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-            "https://www.instagram.com/peacemaker_dev"
-        ],
-        "description": "Web Developer and aspiring Software Engineer creating clean, modern, functional websites for businesses and individuals.",
-        "address": {
-            "@type": "PostalAddress",
-            "addressCountry": "South Africa"
-        }
-        }
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mlamuli Biyela",
+  "jobTitle": "Web Developer & Aspiring Software Engineer",
+  "url": "https://peacemakerdev.co.za/",
+  "image": "https://peacemakerdev.co.za/images/preview.png",
+  "description": "Pretoria-based Web Developer originally from Mandeni, KwaZulu-Natal, creating clean, modern, functional websites for businesses and individuals.",
+  
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Pretoria",
+    "addressRegion": "Gauteng",
+    "addressCountry": "South Africa",
+    "addressLocalityOrigin": "Mandeni, KwaZulu-Natal"
+  },
+
+  "sameAs": [
+    "https://github.com/peacemaker-dev",
+    "https://www.linkedin.com/in/mlamuli-biyela-178406276",
+    "https://www.instagram.com/peacemaker_dev"
+  ]
+}
     </script>
 
 </head>
@@ -72,14 +77,15 @@
 <body>
     <header class="site-header home">
         <div class="logo">
-            <a href="index.html"><img src="images/logo.png" alt="Peacemaker Dev Logo" width="50"></a>
+            <a href="https://www.peacemakerdev.co.za/"><img src="images/logo.png" alt="Peacemaker Dev Logo"
+                    width="50"></a>
         </div>
         <nav class="nav" aria-label="Main Navigation">
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://www.peacemakerdev.co.za/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/contact">Contact</a></li>
             </ul>
         </nav>
         <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
@@ -106,9 +112,9 @@
 
                     <!-- Call-to-Action Buttons -->
                     <div class="hero-cta-buttons">
-                        <a href="packages.html" class="btn primary-btn">View Packages</a>
-                        <a href="projects.html" class="btn secondary-btn">See Projects</a>
-                        <a href="contact.html" class="btn tertiary-btn">Contact Me</a>
+                        <a href="/packages" class="btn primary-btn">View Packages</a>
+                        <a href="/projects" class="btn secondary-btn">See Projects</a>
+                        <a href="/contact" class="btn tertiary-btn">Contact Me</a>
                     </div>
                 </div>
 
@@ -153,10 +159,10 @@
 
                     <p>
                         You can explore my journey and background in more detail on the
-                        <a href="about.html">About page</a>.
+                        <a href="/about">About page</a>.
                     </p>
 
-                    <button class="btn primary-btn" onclick="window.location.href='contact.html'">
+                    <button class="btn primary-btn" onclick="window.location.href='/contact'">
                         Get in Touch
                     </button>
                 </div>
@@ -205,7 +211,7 @@
                             <li><strong>Price:</strong> R1,000 - R4,200</li>
                         </ul>
 
-                        <button class="btn primary-btn" onclick="window.location.href='packages.html#portfolio'">
+                        <button class="btn primary-btn" onclick="window.location.href='/packages#portfolio'">
                             View Details
                         </button>
                     </article>
@@ -232,7 +238,7 @@
                             <li><strong>Price:</strong> R1,500 - R5,500</li>
                         </ul>
 
-                        <button class="btn primary-btn" onclick="window.location.href='packages.html#booking'">
+                        <button class="btn primary-btn" onclick="window.location.href='/packages#booking'">
                             View Details
                         </button>
                     </article>
@@ -259,7 +265,7 @@
                             <li><strong>Price:</strong> R3,000 - R7,500</li>
                         </ul>
 
-                        <button class="btn primary-btn" onclick="window.location.href='packages.html#ecommerce'">
+                        <button class="btn primary-btn" onclick="window.location.href='/packages#ecommerce'">
                             View Details
                         </button>
                     </article>
@@ -285,7 +291,7 @@
                         <div class="project-info">
                             <h3>Personal Portfolio</h3>
                             <p>My portfolio website showcasing responsive design and custom UI elements.</p>
-                            <a class="project-btn" href='index.html'>View Project</a>
+                            <a class="project-btn" href='https://www.peacemakerdev.co.za/'>View Project</a>
                         </div>
                     </div>
                 </div>
@@ -328,11 +334,11 @@
                 </p>
 
                 <div class="bottom-cta-buttons">
-                    <button class="bottom-btn first-btn" onclick="window.location.href='contact.html'">
+                    <button class="bottom-btn first-btn" onclick="window.location.href='/contact'">
                         Get a Quote
                     </button>
 
-                    <button class="bottom-btn sec-btn" onclick="window.location.href='packages.html'">
+                    <button class="bottom-btn sec-btn" onclick="window.location.href='/packages'">
                         View Packages
                     </button>
                 </div>
@@ -352,11 +358,11 @@
             <div class="footer-links">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="packages.html">Packages</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://www.peacemakerdev.co.za/">Home</a></li>
+                    <li><a href="/packages">Packages</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
@@ -364,15 +370,20 @@
                 <p>Email: <a href="mailto:mlamuli@peacemakerdev.co.za">mlamuli@peacemakerdev.co.za</a></p>
                 <p>Phone: <a href="tel:+27791681131">+27 79 168 1131</a></p>
                 <div class="social-links">
-                    <a href="https://github.com/peacemaker-dev" target="_blank"><img class="link-image" src="images/icons/github.png" width="30"></a>
-                    <a href="https://www.facebook.com/profile.php?id=61577854126373&mibextid=ZbWKwL" target="_blank"><img class="link-image" src="images/icons/facebook.png" width="30"></a>
-                    <a href="https://www.linkedin.com/in/mlamuli-biyela-178406276?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><img class="link-image" src="images/icons/linkedin.png" width="30"></a>
-                    <a href="https://www.instagram.com/peacemaker_dev?igsh=MTNwOHB6ZHpqNzQ5OQ==" target="_blank"><img class="link-image" src="images/icons/social.png" width="30"></a>
+                    <a href="https://github.com/peacemaker-dev" target="_blank"><img class="link-image"
+                            src="images/icons/github.png" width="30"></a>
+                    <a href="https://www.facebook.com/profile.php?id=61577854126373&mibextid=ZbWKwL"
+                        target="_blank"><img class="link-image" src="images/icons/facebook.png" width="30"></a>
+                    <a href="https://www.linkedin.com/in/mlamuli-biyela-178406276?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                        target="_blank"><img class="link-image" src="images/icons/linkedin.png" width="30"></a>
+                    <a href="https://www.instagram.com/peacemaker_dev?igsh=MTNwOHB6ZHpqNzQ5OQ==" target="_blank"><img
+                            class="link-image" src="images/icons/social.png" width="30"></a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Mlamuli Biyela | Powered by <span class="company-name">Peacemaker Dev</span></p>
+            <p>&copy; <span id="year"></span> Mlamuli Biyela | Powered by <span class="company-name">Peacemaker
+                    Dev</span></p>
         </div>
     </footer>
 
@@ -420,7 +431,8 @@
 
             items.forEach(item => observer.observe(item));
         });
-
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 
 
